@@ -3,7 +3,7 @@
     <div id="bee-header"   element-loading-text="正在努力请求github..." element-loading-background="rgba(0, 0, 0, 0.8)">
         <!-- 遮罩 -->
         <div  :class="  loading ? `modal is-active` : `modal` " style="background-color: #ffffff36">
-                <img src="https://img.actd.tw/images/2018/11/17/ezgif-4-05f4bba41fef.gif" style="width: 300px" alt="">
+                <img src="https://i.loli.net/2018/11/23/5bf801c26d02d.gif" style="width: 300px" alt="">
         </div>
 
         <div class="is-underline ">
@@ -11,7 +11,7 @@
       <nav class="navbar ">
         <div class="navbar-brand">
           <a class="navbar-item" @click="handleMenuCommand('/')">
-            <img src="https://img.actd.tw/images/2018/11/17/bee.png" alt="Bulma: a modern CSS framework based on Flexbox" width="92" height="28">
+            <img src="https://i.loli.net/2018/11/23/5bf8016eb0ea0.png" alt="Bulma: a modern CSS framework based on Flexbox" width="92" height="28">
           </a>
           <div class="login-before is-hidden-mobile" style="padding-top: 5px;">
             <a class="navbar-item is-hidden-desktop" href="https://github.com/pkwenda/my-bbs" target="_blank">
@@ -27,12 +27,13 @@
             <popup v-model="popupShow" position="right" style="background-color: #fff;">
               <div style="width:200px;">
                 <p class="menu-label">
-                  Transactions
+                  <div class="tags has-addons" style="margin-left:30px;"><span class="tag is-warning"><img src="https://img.actd.tw/images/2018/11/17/bee.png" alt="new-bee 社区" width="50" style="float:left" ></span><span class="tag is-danger">测试版</span></div>
                 </p>
-                <ul class="menu-list">
-                  <li><a>Payments</a></li>
-                  <li><a>Transfers</a></li>
-                  <li><a>Balance</a></li>
+                <ul class="menu-list"  >
+                  <li style="padding: 2px 5px 2px 5px;"><a class="button is-warning" >登录</a></li>
+                  <li style="padding: 2px 5px 2px 5px;"><a class="button is-success" >我的主页</a></li>
+                  <li style="padding: 2px 5px 2px 5px;"><a class="button is-info" >账户设置</a></li>
+                  <li style="padding: 2px 5px 2px 5px;"><a class="button is-danger" >退出</a></li>
                 </ul>
               </div>
             </popup>
@@ -85,6 +86,7 @@
           </div>
 
           <div class="navbar-end">
+            <div class="qq">开源社区：147255248</div>
             <div class="login-before" style="padding-top: 5px;">
               <!-- pc -->
               <a class="navbar-item is-hidden-desktop-only" href="https://github.com/pkwenda/my-bbs" target="_blank">
@@ -260,3 +262,4 @@ export default {
   }
 };
 </script>
+ 
